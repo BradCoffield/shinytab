@@ -1,0 +1,25 @@
+{
+  "name": "007-personal-homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "cors": "^2.8.4",
+
+    "express": "^4.16.2",
+    "feedparser": "^2.2.9",
+    "momentjs": "^2.0.0",
+    "node-cache": "^4.1.1",
+    "request": "^2.83.0"
+  }
+}
