@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.14.12"
+    "nodemon": "^1.18.6"
   },
   "dependencies": {
     "axios": "^0.17.1",
@@ -19,6 +19,6 @@
     "feedparser": "^2.2.9",
     "momentjs": "^2.0.0",
     "node-cache": "^4.1.1",
-    "request": "^2.83.0"
+    "request": "^2.88.0"
   }
 }
