@@ -95,13 +95,14 @@ app.get("/rss/:which", function(req, res) {
   const rssing = require("./rss/feedparsing");
   const feedsIWant = [
     "https://xkcd.com/rss.xml",
-    "https://css-tricks.com/feed/",
+    "https://news.risingstack.com/rss",
     "https://alistapart.com/main/feed",
     "https://www.smashingmagazine.com/feed/"
   ];
 
   let sendFeeds = (err, feedItems) => {
     if (err) {
+      console.log(err);
       return res.send({
         error: "There has been an error. Please check your request or try again later."
       });
