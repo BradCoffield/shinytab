@@ -91,13 +91,37 @@ app.get("/quotes/on-design", (req, res, next) => {
 /**
  * RSS feeds
  */
+/* 
+Feeds to integrade here and in 007-rssfeeds
+https://apod.nasa.gov/apod.rss
+https://vuejsdevelopers.com/feed.xml
+https://vuejsfeed.com/feed
+http://feeds.feedburner.com/SitepointFeed
+http://feeds2.feedburner.com/webdesignerdepot
+http://feeds.feedburner.com/CssTricks
+http://webdesignledger.com/feed
+http://feeds.feedburner.com/speckboy-design-magazine
+http://feeds2.feedburner.com/tympanus
+http://feeds.feedburner.com/Bludice
+
+
+*/
 app.get("/rss/:which", function(req, res) {
   const rssing = require("./rss/feedparsing");
   const feedsIWant = [
     "https://xkcd.com/rss.xml",
     "https://news.risingstack.com/rss",
     "https://alistapart.com/main/feed",
-    "https://www.smashingmagazine.com/feed/"
+    "https://www.smashingmagazine.com/feed/",
+    "https://vuejsdevelopers.com/feed.xml",
+    "https://vuejsfeed.com/feed",
+    "http://feeds.feedburner.com/SitepointFeed",
+    "http://feeds2.feedburner.com/webdesignerdepot",
+    "http://feeds.feedburner.com/CssTricks",
+    "http://webdesignledger.com/feed",
+    "http://feeds.feedburner.com/speckboy-design-magazine",
+    "http://feeds2.feedburner.com/tympanus",
+    "http://feeds.feedburner.com/Bludice"
   ];
 
   let sendFeeds = (err, feedItems) => {
