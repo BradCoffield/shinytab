@@ -207,6 +207,22 @@ app.get("/weather", (req, res, next) => {
   weatherGetter.fetchWeather(generous);
 });
 
+app.get("/pinboard", (req,res,next)=>{
+  console.log('lets get some pinboard, shall we');
+  const pinboardGetter = require("./pinboardApi");
+  let generous = (error, pinboardResults)=>{    if (error) {
+    return res.send({
+      error: "There has been an error. Please check your request or try again later."
+    });
+  } else { 
+    console.log('We here?', pinboardResults);
+    res.send(pinboardResults); }
+  
+  };
+  pinboardGetter.getPinboard(generous)
+})
+
 app.listen(port, () => {
   console.log(`Server is ready on port ${port}.`);
 });
+
