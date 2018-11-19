@@ -70,9 +70,9 @@ let getPinboardAll = function(callback) {
     .then(res => {
       //Lets see if our cache is the same as the current, or if its outdated.
       console.log("hey!!!", res.data.update_time);
-      if (myCache.get("updateTime") != res.data.update_time) {
+      if (myCache.get("updateTimeAll") != res.data.update_time) {
         //Our cache is out of date. So run send the results of getLatestPosts to the callback which will res.send it
-        myCache.set(`updateTime`, res.data.update_time, 900000, function(
+        myCache.set(`updateTimeAll`, res.data.update_time, 900000, function(
           err,
           success
         ) {
