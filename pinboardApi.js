@@ -9,7 +9,8 @@ const allPostsUrl = "https://api.pinboard.in/v1/posts/all"
 let talkToPinboard = url => {
   return axios.get(url, {
     params: {
-      auth_token: process.env.PINBOARD_API_TOKEN,
+      auth_token: "bcoffield:D6D12E049001D41D8792",
+      // auth_token: process.env.PINBOARD_API_TOKEN,
       format: "json"
     }
   });
