@@ -215,7 +215,7 @@ app.get("/pinboard", (req,res,next)=>{
       error: "There has been an error. Please check your request or try again later."
     });
   } else { 
-    console.log('We here?', pinboardResults);
+    console.log('We herePINBOARDREG?');
     res.send(pinboardResults); }
   
   };
@@ -230,11 +230,11 @@ app.get("/pinboardAll", (req,res,next)=>{
       error: "There has been an error. Please check your request or try again later."
     });
   } else { 
-    console.log('We here?', pinboardResults);
+    console.log('We here?');
     res.send(pinboardResults); }
   
   };
-  pinboardGetter.getPinboard(generous)
+  pinboardGetter.getPinboardAll(generous)
 })
 
 app.listen(port, () => {
