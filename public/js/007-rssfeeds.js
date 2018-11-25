@@ -1,6 +1,6 @@
 (function() {
   // could be called whichFeeds. Each number ultimately corresponds to a route and a specific feed/
-  let howManyFeeds = [0, 3, 2, 1,4,5,6,7,8,9,10,11,12];
+  let howManyFeeds = [0, 3, 2, 1,4,5,6,7,8,9,10,11,12,13];
   howManyFeeds.forEach(num => {
     function reqListener() {
       var data = JSON.parse(this.responseText);

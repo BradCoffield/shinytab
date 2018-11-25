@@ -121,7 +121,7 @@ app.get("/rss/:which", function(req, res) {
     "http://webdesignledger.com/feed",
     "http://feeds.feedburner.com/speckboy-design-magazine",
     "http://feeds2.feedburner.com/tympanus",
-    "http://feeds.feedburner.com/Bludice"
+    "http://feeds.feedburner.com/Bludice","http://feeds.feedburner.com/brainpickings/rss"
   ];
 
   let sendFeeds = (err, feedItems) => {
